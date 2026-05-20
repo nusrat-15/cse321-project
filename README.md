@@ -1,2 +1,3 @@
 # cse321-project
-Multithreaded Process Manager Simulator in C
+
+This project is a **multithreaded process manager simulator** written in C that mimics how an operating system manages processes. It supports essential system calls such as fork(), exit(), wait(), and kill(), while maintaining a process table with parent-child relationships and process states (RUNNING, BLOCKED, and ZOMBIE). The simulator handles advanced OS concepts including zombie process cleanup and orphan process reparenting to the init process (PID 1). Multiple worker threads execute command scripts concurrently, and a dedicated monitor thread records real-time snapshots of the process table to a file, demonstrating synchronization using POSIX threads, mutexes, and condition variables.
